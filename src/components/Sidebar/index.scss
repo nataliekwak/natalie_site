@@ -1,121 +1,113 @@
 .nav-bar {
-    background: #181818;
-    width: 100%;
-    overflow: auto;
-    height: 60px;
-    // position: fixed;
-    // top: 0;
-    // left:0;
-    // z-index: 3;
-    // min-height: 60px;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    // align-items: center;
+  background: #faf6ed;
+  width: 100%;
+  overflow: auto;
+  height: 60px;
+  box-shadow: 0px 5px 20px #bebab3;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 
-    nav {
-        // display: flex;
-        // align-items: center;
-        // text-align: center;
-        // position: absolute;
-        // height: 210px;
-        // top: 50%;
-        // margin-top: -120px;
-        // width: 100%;
-        padding-left: 8px;
+  nav {
+    padding-left: 8px;
 
-        a {
-            float: left;
-            text-align: center;
-            padding-top: 12px;
-            padding-left: 15px;
-            padding-right: 17px;
-    
-            font-size: 22px;
-            color: #4d4d4e;
-            // display: flex;
-            line-height: 34px;
-            height: 34px;
-            position: relative;
-            text-decoration: none;
+    a {
+      float: left;
+      text-align: center;
+      padding-top: 12px;
+      padding-left: 15px;
+      padding-right: 17px;
 
-            i {
-                transition: all 0.3s ease-out;
-            }
+      font-size: 22px;
+      color: #484847;
+      line-height: 34px;
+      height: 34px;
+      position: relative;
+      text-decoration: none;
 
-            &:hover {
-                color: #ffd700;
+      i {
+        transition: all 0.3s ease-out;
+      }
 
-                svg {
-                    opacity: 0;
-                }
+      &:hover {
+        color: #5cb25d;
 
-                &:after {
-                    opacity: 1;
-                }
-            }
-
-            &:after {
-                content: '';
-                font-size: 9px;
-                letter-spacing: 2px;
-                position: absolute;
-                bottom: 0;
-                display: block;
-                width: 100%;
-                text-align: center;
-                opacity: 0;
-                transition: all 0.3s ease-out;
-            }
-
-            &:first-child {
-                &::after {
-                    content: 'HOME';
-                }
-            }
+        svg {
+          opacity: 0;
         }
 
-        a.about-link {
-            &:after {
-                content: 'ABOUT';
-            }
+        &:after {
+          opacity: 1;
         }
+      }
 
-        a.contact-link {
-            &:after {
-                content: 'CONTACT';
-            }
-        }
-
-        a.active {
-            svg {
-                color: #ffd700;
-            }
-        }
-    }
-
-    ul {
+      &:after {
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
         position: absolute;
-        bottom: 20px;
+        bottom: 0;
+        display: block;
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        list-style: none;
         text-align: center;
-        margin: 0;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
 
-        li {
-            a {
-                padding: 7px 0;
-                display: block;
-                font-size: 15px;
-                line-height: 16px;
-
-                &:hover svg {
-                    color: #ffd700;
-                }
-            }
+      &:first-child {
+        &::after {
+          content: 'HOME';
         }
+      }
     }
+
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.active {
+      svg {
+        color: #5cb25d;
+      }
+    }
+  }
+
+  ul {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-right: 17px;
+    margin: 9px 0;
+
+    li {
+      a {
+        padding: 0 9px;
+        font-size: 18px;
+        line-height: 10px;
+
+        &:hover svg {
+          color: #5cb25d;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-bar a {
+    float: none;
+    display: block;
+  }
 }
