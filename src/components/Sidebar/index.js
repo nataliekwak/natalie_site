@@ -1,8 +1,8 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './index.scss';
 
-import LogoS from '../../assets/images/logo-s.png';
-import LogoSubtitle from '../../assets/images/logo_sub.png';
+// import LogoS from '../../assets/images/logo-s.png';
+// import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -10,10 +10,10 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 const Sidebar = () => {
     return (
         <div className='nav-bar'>
-            <Link className='logo' to='/'>
+            {/* <Link className='logo' to='/'>
                 <img src={LogoS} alt='logo' />
                 <img className='sub-logo' src={LogoSubtitle} alt='natalie' />
-            </Link>
+            </Link> */}
 
             <nav>
                 <NavLink exact='true' activeclassname='active' to='/'>
@@ -37,6 +37,7 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
                     </a>
                 </li>
+                {/* TO DO: make a little paper icon and link resume */}
             </ul>
         </div>
     )
