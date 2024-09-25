@@ -11,3 +11,8 @@ Colors:
 #e53529 - red
 #0f9015 - darker green
 #b25e7e - pink
+
+## Fun things to add
+
+react-darkreader to create a night mode
+portal to frutiger aero mode

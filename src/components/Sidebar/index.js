@@ -1,10 +1,8 @@
-import { NavLink } from 'react-router-dom';
 import './index.scss';
-
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faFileLines, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { Tooltip } from '@mui/material';
 
 const Sidebar = () => {
     return (
@@ -22,7 +20,7 @@ const Sidebar = () => {
             </nav>
             <ul>
                 <li>
-                    <a target='_blank' title='Resume' rel='noreferrer' href='https://github.com/nataliekwak'>
+                    <a target='_blank' title='Resume' rel='noreferrer' href='https://nataliekwak.com/KwakN_Resume.pdf'>
                         <FontAwesomeIcon icon={faFileLines} color='#484847' />
                     </a>
                 </li>
