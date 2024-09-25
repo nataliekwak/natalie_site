@@ -16,3 +16,6 @@ Colors:
 
 react-darkreader to create a night mode
 portal to frutiger aero mode
+
+
+npm run deploy -- -m "Deploy" 
