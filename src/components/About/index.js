@@ -22,6 +22,8 @@ const About = () => {
                     />
                 </h1>
                 <p>I am an ambitious Computer Science student looking for opportunities to expand my career development and software engineering skills.</p>
+                <br />
+                <p>Natalie is actively working on an extended resume and a 'Projects' section. Please check back soon!</p>
             </div>
         </div>
     )
