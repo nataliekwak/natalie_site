@@ -11,7 +11,8 @@
 
     h1 {
         color: #484847;
-        font-size: 53px;
+        font-size: 5.4rem;
+        //font-size: 53px;
         margin: 0;
         font-family: "Coolvetica";
         font-weight: 400;
@@ -28,24 +29,24 @@
 
     h2 {
         color: #484847;
-        margin-top: 20px;
+        margin-top: 2rem;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 1.28rem;
         font-family: sans-serif;
-        letter-spacing: 3px;
+        letter-spacing: 0.33rem;
         animation: fadeIn 1s 1.8s backwards;
     }
 
     .flat-button {
         color: #5cb25d;
-        font-size: 13px;
+        font-size: 1.3rem;
         font-weight: 400;
-        letter-spacing: 4px;
+        letter-spacing: 0.43rem;
         font-family: sans-serif;
         text-decoration: none;
-        padding: 10px 18px;
-        border: 1px solid #5cb25d;
-        margin-top: 25px;
+        padding: 1.35rem 2.3rem;
+        border: 0.1rem solid #5cb25d;
+        margin-top: 1.4rem;
         float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;

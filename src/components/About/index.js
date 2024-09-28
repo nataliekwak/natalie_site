@@ -1,6 +1,7 @@
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
+import ProjectsCarousel from '../ProjectsCarousel';
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -24,6 +25,9 @@ const About = () => {
                 <p>I am an ambitious Computer Science student looking for opportunities to expand my career development and software engineering skills.</p>
                 <br />
                 <p>Natalie is actively working on an extended resume and a 'Projects' section. Please check back soon!</p>
+                <div>
+                    <ProjectsCarousel />
+                </div>
             </div>
         </div>
     )
