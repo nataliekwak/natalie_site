@@ -1,39 +1,54 @@
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
 
-.slick-list,
 .slick-slider,
 .slick-track {
   //padding: 1.5rem 0;
-  margin: 1.5rem 0;
-  height: 30rem;
+  margin: 2rem 0;
+  height: 20rem;
+  width: 100%;
+}
+
+.slick-slide.slick-active.slick-center.slick-current {
+  height: 20rem;
+}
+
+.slick-list {
+  margin: 0 auto;
+  padding: 0;
+  height: 40rem;
 }
 
 .carousel-container {
-  width: 80;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 3rem 0;
-    text-align: center;
+  max-width: 100%;
+  height: 20rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+  text-align: center;
 
-    h2 {
-        font-size: 1.9rem;
-    }
+  h2 {
+    font-size: 1.9rem;
+  }
 }
 
 .slide-container {
-  height: 20rem;
-  margin: 0 0.5rem;
-  padding: 0.5rem;
+  height: 12rem;
+  border: 2px solid #5cb25d;
+  border-radius: 0.5rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   img {
-    width: 80%;
-    height: 30%;
+      width: 100%;
+      height: auto;
   }
 
   .description {
-    position: absolute;
-    text-align: left;
+      position: relative;
+      text-align: left;
+      margin-top: 1rem;
 
     h3 {
       font-size: 1rem;
@@ -46,11 +61,12 @@
   }
 }
 
-.slide {
+.slick-slide {
+  height: 30rem;
+  width: 20rem;
   transform: scale(0.2);
   transition: transform 300ms;
   opacity: 0.5;
-  border: 2px solid #b25e7e;
 
   img {
     width: 5rem;
@@ -58,8 +74,8 @@
   }
 }
 
+.slick-current,
 .activeSlide {
-  height: 20rem;
   transform: scale(1.1);
   opacity: 1;
 }
@@ -70,11 +86,13 @@
   z-index: 10;
 
   svg {
+    width: auto;
+    height: 2rem;
     transition: color 300ms;
   }
 
   svg:hover {
-    color: #68edff;
+    color: #5cb25d;
   }
 }
 
@@ -86,4 +104,22 @@
 .prev {
   left: 0;
   top: 50%;
+}
+
+@media (min-width: 700px) {
+  .slide-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 50%;
+      height: auto;
+    }
+
+    .description {
+      margin-top: 0;
+      margin-left: 1rem;
+    }
+  }
 }
