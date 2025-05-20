@@ -4,44 +4,34 @@ import Slider from 'react-slick';
 import Project from './Project';
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 import { useState } from 'react';
+import alliRater from '../../assets/images/AlliRater.gif';
+import vcCompiler from '../../assets/images/VCCompiler.png';
+import lsr from '../../assets/images/LSR.png';
+import macronutrientCalculator from '../../assets/images/MacroCalc.png';
+
 
 function SliderComp() {
     const slides = [
         {
-            title: `Project 1`,
-            img: `https://via.placeholder.com/150`,
-            description: `This is a description of project 1. It is a very cool project that I worked on.`
+            title: `AlliRater`,
+            img: alliRater,
+            description: `Web app created to allow University of Florida students to rate the meals at on-campus dining halls. Students can also access the current meal ratings for the particular dining hall in order to help decide if they should eat there. Includes registration, login, and profile editing.`,
         },
         {
-            title: `Project 2`,
-            img: `https://via.placeholder.com/150`,
-            description: `This is a description of project 2. It is a very cool project that I worked on.`
+            title: `VC Compiler`,
+            img:vcCompiler,
+            description: `A compiler written in five parts (Scanner, Recognizer, Parser, Code Generator, Checker) for the VC programming language. Developed with Java`
         },
         {
-            title: `Project 3`,
-            img: `https://via.placeholder.com/150`,
-            description: `This is a description of project 3. It is a very cool project that I worked on.`
+            title: `Link State Routing Protocol`,
+            img: lsr,
+            description: `Implementation of the Link State Routing Protocol that produces a global view of the inputted network topology. Runs Dijkstra's algorithm to compute the least-cost paths to all other routers within the network.`
         },
         {
-            title: `Project 4`,
-            img: `https://via.placeholder.com/150`,
-            description: `This is a description of project 4. It is a very cool project that I worked on.`
+            title: `Macronutrient Calculator`,
+            img: macronutrientCalculator,
+            description: `Terminal-driven program pulling a list of ingredients from a public database, allowing users to use quick sort or merge sort to sort ingredients, analyze the time taken for each, and check to macro details of a specific ingredient.`
         },
-        {
-            title: `Project 5`,
-            img: `https://via.placeholder.com/150`,
-            description: `This is a description of project 5. It is a very cool project that I worked on.`
-        },
-        {
-            title: `Project 6`,
-            img: `https://via.placeholder.com/150`,
-            description: `This is a description of project 6. It is a very cool project that I worked on.`
-        },
-        {
-            title: `Project 7`,
-            img: `https://via.placeholder.com/150`,
-            description: `This is a description of project 7. It is a very cool project that I worked on.`
-        }
     ]
 
     const NextArrow = ({ onClick }) => {

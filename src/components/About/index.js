@@ -22,12 +22,18 @@ const About = () => {
                         idx={15}
                     />
                 </h1>
-                <p>I am an ambitious Computer Science student looking for opportunities to expand my career development and software engineering skills.</p>
-                <br />
+                <p className='about-text'>
+                Hi, I’m Natalie! I am a Computer Science student with a passion for building meaningful, human-centered tech. 
+                I’ve worked on projects ranging from web development to artificial intelligence, always aiming to combine 
+                technical skill with purpose. Whether it’s optimizing code, collaborating on creative solutions, or exploring 
+                tech’s role in social change, I’m always looking to learn, grow, and make an impact.
+                </p>
+                <hr className='section-divider' />
                 <p>Natalie is actively working on an extended resume and a 'Projects' section. Please check back soon!</p>
                 <div>
                     <ProjectsCarousel />
                 </div>
+                <div className='bottom-bumper'> </div>
             </div>
         </div>
     )
