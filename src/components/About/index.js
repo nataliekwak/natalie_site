@@ -23,7 +23,7 @@ const About = () => {
                     />
                 </h1>
                 <p className='about-text'>
-                Hi, I’m Natalie! I am a Computer Science student with a passion for building meaningful, human-centered tech. 
+                Hi, I’m Natalie! I am a Pre-Law Computer Science student with a passion for building meaningful, human-centered tech. 
                 I’ve worked on projects ranging from web development to artificial intelligence, always aiming to combine 
                 technical skill with purpose. Whether it’s optimizing code, collaborating on creative solutions, or exploring 
                 tech’s role in social change, I’m always looking to learn, grow, and make an impact.
